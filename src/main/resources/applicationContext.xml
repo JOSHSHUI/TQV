@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
     <!-- 配置连接池: -->
     <!-- 引入外部属性文件 -->
     <context:property-placeholder location="classpath:jdbc.properties" />
@@ -31,8 +31,27 @@
         <!-- 配置Hibernate的映射文件 -->
         <property name="mappingResources">
             <list>
-
+                <value>com/tqv/vo/Title.java</value>
+                <value>com/tqv/vo/Teachers.java</value>
+                <value>com/tqv/vo/Students.java</value>
+                <value>com/tqv/vo/Scores.java</value>
+                <value>com/tqv/vo/Infos.java</value>
+                <value>com/tqv/vo/Exams.java</value>
+                <value>com/tqv/vo/Courses.java</value>
+                <value>com/tqv/vo/Consumers.java</value>
+                <value>com/tqv/vo/Classes.java</value>
             </list>
         </property>
     </bean>
+
+    <!-- 事务管理: -->
+    <!-- 事务管理器 -->
+    <bean id="transactionManager"
+          class="org.springframework.orm.hibernate4.HibernateTransactionManager">
+        <property name="sessionFactory" ref="sessionFactory" />
+    </bean>
+    <!-- 注解事务 -->
+    <tx:annotation-driven transaction-manager="transactionManager" />
+
+    <!---->
 </beans>
