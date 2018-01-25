@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> - 学生主页</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="contact-box">
+                <a href="#">
+                    <div class="col-sm-5">
+                        <div class="text-center">
+                            <img alt="image" class="img-circle m-t-xs img-responsive" src="img/a1.jpg" >
+                            <div class="m-t-xs font-bold" style="height: 66px"><br>职位：班长<br>背景：共青团员<br></div>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <h3><strong><br>张三</strong></h3>
+                        <p><i class="fa fa-map-marker"></i> 一年二班</p>
+                        <address>
+                            <strong>1530110316</strong><br>
+                            男<br>
+                            <abbr title="Phone">Tel:</abbr> 17558446374<br><br>
+                            <strong>教师寄语：该学生勤奋刻苦，乐善好施，什么脏活累活都从不交到他人之手，任劳任怨，在班级里起到了良好的带头作用！学期成绩优异，令家长和老师放心。<br></strong><br>
+                        </address>
+                    </div>
+                    <div class="clearfix"></div>
+                </a>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>近六次考试语数外成绩</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="echarts" id="echarts-line-chart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>近六次考试总成绩</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+
+                    <div class="echarts" id="echarts-bar-chart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>饼状图</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="graph_flot.html#">
+                            <i class="fa fa-wrench"></i>
+                        </a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="graph_flot.html#">选项1</a>
+                            </li>
+                            <li><a href="graph_flot.html#">选项2</a>
+                            </li>
+                        </ul>
+                        <a class="close-link">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+                    <div class="echarts" id="echarts-pie-chart"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 全局js -->
+<script src="js/jquery.min.js?v=2.1.4"></script>
+<script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+
+
+<!-- 自定义js -->
+<script src="js/content.js?v=1.0.0"></script>
+
+<!-- ECharts -->
+<script src="js/plugins/echarts/echarts-all.js"></script>
+
+<!-- ECharts demo data -->
+<script src="js/demo/echarts-demo.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $('.contact-box').each(function () {
+            animationHover(this, 'pulse');
+        });
+    });
+</script>
+
+
+
+
+</body>
+
+</html>

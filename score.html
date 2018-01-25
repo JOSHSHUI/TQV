@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title> 成绩主页</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css?v=4.1.0" rel="stylesheet">
+
+</head>
+
+<body class="gray-bg">
+<br/>
+<div class="col-sm-7 pull-right">
+    <label class="col-sm-1 control-label">学年：</label>
+    <div class="col-sm-2">
+        <select class="form-control" name="">
+            <option>2015</option>
+            <option>2016</option>
+            <option>2017</option>
+            <option>2018</option>
+        </select>
+    </div>
+    <label class="col-sm-1 control-label">学期：</label>
+    <div class="col-sm-2">
+        <select class="form-control" name="">
+            <option> 1</option>
+            <option> 2</option>
+        </select>
+    </div>
+
+<form method="get" action="index.html" class="pull-right mail-search">
+    <div class="input-group">
+        <input type="text" class="form-control input-sm" name="search" placeholder="按类别进行搜索">
+        <div class="input-group-btn">
+            <button type="submit" class="btn btn-sm btn-primary">
+                搜索
+            </button>
+        </div>
+    </div>
+</form>
+</div>
+<br/>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>较上次考试，三科成绩柱状图</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+
+                    <div class="echarts" id="echarts-bar-chart"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>上次考试各科信息</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+
+                    <div class="echarts" id="echarts-bar-chart1"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-title">
+                    <h5>最新一次考试全部成绩</h5>
+                    <div class="ibox-tools">
+                        <a class="collapse-link">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="ibox-content">
+
+                    <div class="echarts" id="echarts-bar-chart2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 全局js -->
+<script src="js/jquery.min.js?v=2.1.4"></script>
+<script src="js/bootstrap.min.js?v=3.3.6"></script>
+
+
+
+<!-- 自定义js -->
+<script src="js/content.js?v=1.0.0"></script>
+
+<!-- ECharts -->
+<script src="js/plugins/echarts/echarts-all.js"></script>
+
+<!-- ECharts demo data -->
+<script src="js/demo/echarts-score.js"></script>
+
+
+<script>
+    $(document).ready(function () {
+        $('.contact-box').each(function () {
+            animationHover(this, 'pulse');
+        });
+    });
+</script>
+
+
+
+
+</body>
+
+</html>
