@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body>
+<div class="col-md-12">
+    <div class="col-md-4"></div>
+    <div class="ibox float-e-margins">
+        <div class="login-dark">
+    <form method="post" action="">
+        <h2 class="sr-only">信息界面</h2>
+            <div class="col-sm-4">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-content no-padding">
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <span class="badge badge-primary">教师编号</span> <s:textfield placeholder="教师编号" name="stu_id" value="%{#session.}" class="form-control"/>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="badge badge-info">教师名称</span> <s:textfield placeholder="教师名称" name="stu_id" value="%{#session.}" class="form-control"/>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge badge-danger">教师性别</span> <s:textfield placeholder="教师性别" name="stu_id" value="%{#session.}" class="form-control"/>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge badge-primary">教师年龄</span> <s:textfield placeholder="教师年龄" name="stu_id" value="%{#session.}" class="form-control"/>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="badge badge-info">教师职称</span> <s:textfield placeholder="教师职称" name="stu_id" value="%{#session.}" class="form-control"/>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge badge-danger">政治面貌</span> <s:textfield placeholder="政治面貌" name="stu_id" value="%{#session.}" class="form-control"/>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge badge-primary">身份证号</span> <s:textfield placeholder="身份证号" name="stu_id" value="%{#session.}" class="form-control"/>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="badge badge-info">教师地址</span> <s:textfield placeholder="教师地址" name="stu_id" value="%{#session.}" class="form-control"/>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge badge-danger">联系电话</span> <s:textfield placeholder="联系电话" name="stu_id" value="%{#session.}" class="form-control"/>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge badge-primary">教师学历</span> <s:textfield placeholder="教师学历" name="stu_id" value="%{#session.}" class="form-control"/>
+                            </li>
+                            <li class="list-group-item ">
+                                <span class="badge badge-info">级别</span> <s:textfield placeholder="级别" name="stu_id" value="%{#session.}" class="form-control"/>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="badge badge-danger">照片地址</span> <s:textfield placeholder="照片地址" name="stu_id" value="%{#session.}" class="form-control"/>
+                            </li>
+                        </ul>
+                        <span class="badge badge-success"></span>
+                        <div class="col-sm-6">
+                            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">保存</button></div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group"><button class="btn btn-primary btn-block" type="submit">删除</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </form>
+</div>
+    </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

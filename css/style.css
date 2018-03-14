@@ -3275,10 +3275,8 @@ a.forum-item-title:hover {
     padding: 12px 10px;
     margin: 0;
     border-radius: 0;
-    background: #2f4050;
     color: #fff;
     text-align: center;
-    border-right: 1px solid #334556;
 }
 
 .sidebar-container ul.nav-tabs li.active a {
@@ -3384,7 +3382,6 @@ body.boxed-layout {
 }
 
 body.boxed-layout #wrapper {
-    background-color: #2f4050;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -3529,7 +3526,6 @@ video {
 #wrapper {
     width: 100%;
     overflow-x: hidden;
-    background-color: #2f4050;
 }
 
 .wrapper {
